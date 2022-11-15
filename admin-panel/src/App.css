@@ -1,12 +1,40 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 10px 60px;
+  border-bottom: 1px solid grey;
+}
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavBar li {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.NavBar li:hover {
+  border-bottom: 2px solid #8dc63f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media only screen and (max-width: 730px) {
+  .menus {
+    display: none;
+  }
+  .signinBtn {
+    display: none;
+  }
+  .barIcon {
+    display: block;
+  }
+  .ResponsiveHeader {
+    width: 100%;
+  }
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
