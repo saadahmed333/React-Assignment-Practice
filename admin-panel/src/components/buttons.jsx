@@ -7,3 +7,12 @@ function SigninBtn() {
 }
 
 export {SigninBtn}
+
+
+
+function Mybutton(props) {
+    return (
+        <button className="border w-[80px]">{props.title}</button>
+    )
+}
+export {Mybutton}

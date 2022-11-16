@@ -1,10 +1,14 @@
 import './App.css';
 import './index'
+import './components/functionality/sidebar'
 import {List} from './components/list'
 import {SigninBtn} from './components/buttons' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 import {Sidebar} from './components/sidebar'
+import {Mybutton} from './components/buttons'
+
+let theme = "orange"
 function App() {
   return (
     <div>
@@ -12,7 +16,7 @@ function App() {
       <div className='items'>
         <div className='ResponsiveHeader flex justify-between items-center'>
           <h1 className='text-[#8dc63f] font-bold text-[25px]'>STORE</h1>
-        <FontAwesomeIcon icon={faBars} className='barIcon text-[25px] hidden' />
+        <FontAwesomeIcon icon={faBars} className='barIcon text-[25px] hidden' id='bar' />
         </div>
         <div className='menus'>
           <List />
@@ -24,6 +28,12 @@ function App() {
     </header>
         <div>
         <Sidebar />
+        </div>
+        <div>
+          <Mybutton title="signin" color="red" />
+          <Mybutton title="saad" />
+          <Mybutton title="1" />
+          <Mybutton title="2" />
         </div>
     </div>
   );
