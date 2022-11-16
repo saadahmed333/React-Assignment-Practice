@@ -30,7 +30,7 @@ function App() {
         <Sidebar />
         </div>
         <div>
-          <Mybutton title="signin" color="red" />
+          <Mybutton title="signin" />
           <Mybutton title="saad" />
           <Mybutton title="1" />
           <Mybutton title="2" />
